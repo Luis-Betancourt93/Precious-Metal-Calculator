@@ -1,18 +1,33 @@
 
 body {
-  background-color: black;
+  background-image: url('../img/gold.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
+.insideBox {
+  padding: 30px;
+  background-color: rgba(69, 69, 69, 0.7);
+  border-radius: 10px;
+ 
+}
 
+.insideBox p {
+  text-align: center;
+}
 .container {
   /* Center vertically and horizontally */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  align-items: center;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  
 }
+
+
 
 .child {
   align-self: center;
@@ -24,7 +39,3 @@ body {
 p {
   color: white;
 }
-
-/* 
-Left off Js working, commit and then add a background image.
-*/
