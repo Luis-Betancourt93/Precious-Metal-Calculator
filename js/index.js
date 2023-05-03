@@ -1,9 +1,8 @@
 
-let button = document.querySelector('#button')
+let button = document.querySelector('#submit')
 
 
 button.addEventListener("click", addNums)
-
 
 
 function addNums() {
@@ -15,4 +14,8 @@ function addNums() {
 
   document.getElementById('premium').innerHTML = `$${premiumPaid}`
   document.getElementById('percent').innerHTML = `${percentage}%`
+}
+
+function refreshPage() {
+  location.reload()
 }

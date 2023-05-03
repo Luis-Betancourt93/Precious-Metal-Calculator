@@ -6,22 +6,23 @@ body {
   background-position: center center;
 }
 
+
 .insideBox {
   padding: 30px;
   background-color: rgba(69, 69, 69, 0.7);
   border-radius: 10px;
+  text-align: center;
  
 }
 
-.insideBox p {
-  text-align: center;
-}
 .container {
   /* Center vertically and horizontally */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Roboto', sans-serif;
+
   /* flex-direction: column; */
   /* align-items: center; */
   
@@ -38,4 +39,32 @@ body {
 
 p {
   color: white;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  
+
+}
+
+.buttons button {
+  flex-grow: 1;
+  height: 30px;
+  border-radius: 10px;
+  color: white;
+  
+}
+
+.clear {
+  background-color:  #008080 ;
+  
+}
+
+.submit {
+  background-color: #228B22;
+}
+
+.clear:hover, .submit:hover  {
+  filter: brightness(1.2);
 }

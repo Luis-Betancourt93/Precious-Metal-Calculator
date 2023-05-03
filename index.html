@@ -4,8 +4,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style/normalize.css">
   <link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title> Precious Metal Premium Calculator</title>
 </head>
 <body>
@@ -16,9 +21,13 @@
         <input type="number" class="child" id="amount">
         <p>How much did you pay?</p>
         <input type="number" class="child" id="paid">
-        <p>You Paid a premium of: <span id="premium"></span></p>
-        <p>Your premim percentage is: <span id="percent"></span></p>
-        <button id="button">Submit</button>
+        <p>You paid a premium of: <span id="premium"></span></p>
+        <p>Your premium percentage is: <span id="percent"></span></p>
+        <div class="buttons">
+          <button id="clear" class="clear" onclick="refreshPage()">Clear</button>
+          <button id="submit" class="submit">Submit</button>
+        </div>
+        
         <p class="premium"></p>
       </div>
     </div>
